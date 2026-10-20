@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de João Pedro Sá (@Jottape11) — Estudante de Engenharia de Software na FIAP, entusiasta de aprendizado contínuo e Inteligência Artificial." />
+  <title>João Pedro Sá — Software Engineering @ FIAP</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Barra de progresso de leitura no topo -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <div class="page-shell">
+    <div class="split-layout">
+
+      <!-- COLUNA ESQUERDA FIXA (Vertical Sticky) -->
+      <header class="left-column">
+        <div class="left-top">
+          <div class="meta-bar intro-fade">
+            <span class="mono-tag">&lt;Jottape11 /&gt;</span>
+            <span class="meta-dot"></span>
+            <span class="mono-muted">SÃO PAULO, BR</span>
+            <button type="button" class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">
+              <span class="theme-toggle-dot"></span>
+              <span id="themeLabel">LATTE MODE</span>
+            </button>
+          </div>
+
+          <h1 class="hero-name" aria-label="João Pedro Sá">
+            <span class="line-mask"><span class="line-inner">João Pedro Sá</span></span>
+          </h1>
+
+          <p class="hero-role intro-fade">
+            Engenharia de Software @ FIAP
+          </p>
+
+          <p class="hero-bio intro-fade">
+            Estudante de Engenharia de Software movido pela vontade constante de aprender coisas novas na prática e por uma grande curiosidade sobre Inteligência Artificial.
+          </p>
+
+          <!-- Navegação Vertical com Indicador Dinâmico -->
+          <nav class="side-nav intro-fade" aria-label="Navegação entre seções">
+            <ul class="side-nav-list">
+              <li>
+                <a href="#sobre" class="side-nav-link active" data-section="sobre">
+                  <span class="side-nav-line"></span>
+                  <span class="side-nav-num">01</span>
+                  <span class="side-nav-label" data-scramble="ATUALMENTE">ATUALMENTE</span>
+                </a>
+              </li>
+              <li>
+                <a href="#projetos" class="side-nav-link" data-section="projetos">
+                  <span class="side-nav-line"></span>
+                  <span class="side-nav-num">02</span>
+                  <span class="side-nav-label" data-scramble="PROJETOS">PROJETOS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#stack" class="side-nav-link" data-section="stack">
+                  <span class="side-nav-line"></span>
+                  <span class="side-nav-num">03</span>
+                  <span class="side-nav-label" data-scramble="TECH STACK">TECH STACK</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contato" class="side-nav-link" data-section="contato">
+                  <span class="side-nav-line"></span>
+                  <span class="side-nav-num">04</span>
+                  <span class="side-nav-label" data-scramble="CONTATO">CONTATO</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Rodapé da Coluna Esquerda com Ícones Magnéticos -->
+        <div class="left-bottom intro-fade">
+          <div class="social-row" aria-label="Links sociais">
+            <a href="https://github.com/Jottape11" target="_blank" rel="noopener noreferrer" class="magnetic-btn social-icon-btn" aria-label="GitHub" title="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-s%C3%A1/" target="_blank" rel="noopener noreferrer" class="magnetic-btn social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+              </svg>
+            </a>
+            <a href="mailto:jpmaschionsa@gmail.com" class="magnetic-btn social-icon-btn" aria-label="E-mail" title="E-mail">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- COLUNA DIREITA ROLÁVEL (Fluxo Vertical Editorial) -->
+      <main class="right-column" id="mainContent">
+
+        <!-- 01 // ATUALMENTE (Inspirado em joaopassarelli.com) -->
+        <section id="sobre" class="content-section" data-section-id="sobre">
+          <div class="section-header">
+            <span class="section-index" data-scramble="01 // CURRENTLY">01 // CURRENTLY</span>
+            <span class="section-meta">FIAP • 2026</span>
+          </div>
+          <div class="hairline-draw"></div>
+
+          <div class="currently-list">
+            <article class="currently-item reveal-up">
+              <div class="currently-top">
+                <span class="pin-badge">● PINNED</span>
+                <span class="currently-date">2026 — ATUAL</span>
+              </div>
+              <p class="currently-text">
+                Cursando <strong>Engenharia de Software na FIAP</strong> em São Paulo. Gosto de entender como as coisas funcionam por dentro, testar ferramentas novas e transformar ideias em projetos reais no GitHub.
+              </p>
+            </article>
+
+            <article class="currently-item reveal-up">
+              <div class="currently-top">
+                <span class="currently-subtag">CURIOSIDADE &amp; IA</span>
+                <span class="currently-date">EXPLORANDO</span>
+              </div>
+              <p class="currently-text">
+                Entusiasta de <strong>Inteligência Artificial e LLMs</strong> (Gemini, Claude e OpenAI Codex) aplicados ao desenvolvimento de software — desde engenharia de prompts e <em>Vibe Coding</em> até integração com APIs em <strong>Python (FastAPI)</strong> e interfaces em <strong>React e JavaScript</strong>.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 02 // PROJETOS SELECIONADOS (Estilo Brittany Chiang + 3D Tilt) -->
+        <section id="projetos" class="content-section" data-section-id="projetos">
+          <div class="section-header">
+            <span class="section-index" data-scramble="02 // SELECTED PROJECTS">02 // SELECTED PROJECTS</span>
+            <span class="section-meta">06 REPOSITÓRIOS</span>
+          </div>
+          <div class="hairline-draw"></div>
+
+          <div class="projects-list">
+
+            <!-- Projeto 1: Steam Store Analytics -->
+            <article class="project-item reveal-up">
+              <a href="https://github.com/Jottape11/steam-store-analytics" target="_blank" rel="noopener noreferrer" class="project-thumb-wrap tilt-card" aria-label="Abrir Steam Store Analytics no GitHub">
+                <img src="https://raw.githubusercontent.com/Jottape11/steam-store-analytics/main/assets/preview_loja.png" alt="Preview do projeto Steam Store Analytics" class="project-thumb" loading="lazy" />
+                <span class="thumb-badge">01</span>
+              </a>
+
+              <div class="project-body">
+                <div class="project-head">
+                  <h3 class="project-title">
+                    <a href="https://github.com/Jottape11/steam-store-analytics" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                      <span>Steam Store Analytics</span>
+                      <span class="project-arrow">↗</span>
+                    </a>
+                  </h3>
+                  <span class="project-type">BACK-END &amp; DADOS</span>
+                </div>
+
+                <p class="project-desc">
+                  Plataforma de coleta automatizada, armazenamento não relacional, disponibilização via API REST e visualização de dados do catálogo público da Loja da Steam Brasil.
+                </p>
+
+                <ul class="tag-row" aria-label="Tecnologias">
+                  <li class="tag-chip">Python</li>
+                  <li class="tag-chip">REST API</li>
+                  <li class="tag-chip">NoSQL</li>
+                  <li class="tag-chip">HTML/CSS</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Projeto 2: CineLog TV Time -->
+            <article class="project-item reveal-up">
+              <a href="https://cinelog-tvtime.vercel.app" target="_blank" rel="noopener noreferrer" class="project-thumb-wrap tilt-card" aria-label="Abrir CineLog TV Time">
+                <img src="assets/cinelog-preview.png" alt="Preview do projeto CineLog TV Time" class="project-thumb" loading="lazy" />
+                <span class="thumb-badge">02</span>
+              </a>
+
+              <div class="project-body">
+                <div class="project-head">
+                  <h3 class="project-title">
+                    <a href="https://cinelog-tvtime.vercel.app" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                      <span>CineLog TV Time</span>
+                      <span class="project-arrow">↗</span>
+                    </a>
+                  </h3>
+                  <span class="project-type live-pill">● LIVE VERCEL</span>
+                </div>
+
+                <p class="project-desc">
+                  Aplicação web em React para explorar catálogos de filmes e séries e salvar favoritos localmente, consumindo dados da API do TMDB.
+                </p>
+
+                <div class="project-sublinks">
+                  <a href="https://github.com/Jottape11/cinelog-tvtime" target="_blank" rel="noopener noreferrer">Repositório GitHub ↗</a>
+                  <a href="https://cinelog-tvtime.vercel.app" target="_blank" rel="noopener noreferrer">Abrir Deploy ↗</a>
+                </div>
+
+                <ul class="tag-row" aria-label="Tecnologias">
+                  <li class="tag-chip">React</li>
+                  <li class="tag-chip">JavaScript</li>
+                  <li class="tag-chip">CSS3</li>
+                  <li class="tag-chip">TMDB API</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Projeto 3: FastAPI Game Center -->
+            <article class="project-item reveal-up">
+              <a href="https://github.com/Jottape11/fastapi-game-center" target="_blank" rel="noopener noreferrer" class="project-thumb-wrap tilt-card" aria-label="Abrir FastAPI Game Center no GitHub">
+                <img src="assets/fastapi-game-center-preview.png" alt="Preview do projeto FastAPI Game Center" class="project-thumb" loading="lazy" />
+                <span class="thumb-badge">03</span>
+              </a>
+
+              <div class="project-body">
+                <div class="project-head">
+                  <h3 class="project-title">
+                    <a href="https://github.com/Jottape11/fastapi-game-center" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                      <span>FastAPI Game Center</span>
+                      <span class="project-arrow">↗</span>
+                    </a>
+                  </h3>
+                  <span class="project-type">FULL STACK</span>
+                </div>
+
+                <p class="project-desc">
+                  E-commerce full stack de games desenvolvido com FastAPI, arquitetura em camadas (Controller e Service), banco SQLite e interface web integrada via Fetch API.
+                </p>
+
+                <ul class="tag-row" aria-label="Tecnologias">
+                  <li class="tag-chip">Python</li>
+                  <li class="tag-chip">FastAPI</li>
+                  <li class="tag-chip">SQLite</li>
+                  <li class="tag-chip">Fetch API</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Projeto 4: UI Multiverse (VibeCode — Zenit Finance) -->
+            <article class="project-item reveal-up">
+              <a href="https://github.com/Jottape11/ui-multiverse" target="_blank" rel="noopener noreferrer" class="project-thumb-wrap tilt-card" aria-label="Abrir UI Multiverse — Zenit Finance no GitHub">
+                <img src="https://raw.githubusercontent.com/Jottape11/ui-multiverse/main/assets/screenshots/vibecode-preview.png" alt="Preview do VibeCode — Zenit Finance no projeto UI Multiverse" class="project-thumb" loading="lazy" />
+                <span class="thumb-badge">04</span>
+              </a>
+
+              <div class="project-body">
+                <div class="project-head">
+                  <h3 class="project-title">
+                    <a href="https://github.com/Jottape11/ui-multiverse" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                      <span>UI Multiverse — VibeCode (Zenit Finance)</span>
+                      <span class="project-arrow">↗</span>
+                    </a>
+                  </h3>
+                  <span class="project-type">VIBE CODING &amp; UI</span>
+                </div>
+
+                <p class="project-desc">
+                  Estudo prático comparando Bootstrap 5, Tailwind CSS e Vibe Coding, com destaque para a landing page da fintech Zenit Finance com cartão 3D interativo, GSAP, ScrollTrigger e Lenis.
+                </p>
+
+                <ul class="tag-row" aria-label="Tecnologias">
+                  <li class="tag-chip">HTML5 &amp; CSS3</li>
+                  <li class="tag-chip">GSAP</li>
+                  <li class="tag-chip">Lenis</li>
+                  <li class="tag-chip">Tailwind &amp; Bootstrap</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Projeto 5: Projeto Palmeiras -->
+            <article class="project-item reveal-up">
+              <a href="https://github.com/Jottape11/projeto-palmeiras" target="_blank" rel="noopener noreferrer" class="project-thumb-wrap tilt-card" aria-label="Abrir Projeto Palmeiras no GitHub">
+                <img src="https://raw.githubusercontent.com/Jottape11/projeto-palmeiras/main/imagens/torcida.webp" alt="Preview do Projeto Palmeiras" class="project-thumb" loading="lazy" />
+                <span class="thumb-badge">05</span>
+              </a>
+
+              <div class="project-body">
+                <div class="project-head">
+                  <h3 class="project-title">
+                    <a href="https://github.com/Jottape11/projeto-palmeiras" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                      <span>Projeto Palmeiras — CP Front-End</span>
+                      <span class="project-arrow">↗</span>
+                    </a>
+                  </h3>
+                  <span class="project-type">FRONT-END FIAP</span>
+                </div>
+
+                <p class="project-desc">
+                  Landing page temática desenvolvida para a disciplina de Front-End Design na FIAP, trabalhando semântica HTML5, galeria visual e layout responsivo em CSS.
+                </p>
+
+                <ul class="tag-row" aria-label="Tecnologias">
+                  <li class="tag-chip">HTML5</li>
+                  <li class="tag-chip">CSS3</li>
+                  <li class="tag-chip">Front-End Design</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Projeto 6: Projeto GTA -->
+            <article class="project-item reveal-up">
+              <a href="https://github.com/Jottape11/projeto-gta" target="_blank" rel="noopener noreferrer" class="project-thumb-wrap tilt-card" aria-label="Abrir Projeto GTA no GitHub">
+                <img src="https://raw.githubusercontent.com/Jottape11/projeto-gta/main/projeto-gta/src/imagens/bg-main.png" alt="Preview do Projeto GTA" class="project-thumb" loading="lazy" />
+                <span class="thumb-badge">06</span>
+              </a>
+
+              <div class="project-body">
+                <div class="project-head">
+                  <h3 class="project-title">
+                    <a href="https://github.com/Jottape11/projeto-gta" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                      <span>Projeto GTA — Landing Page</span>
+                      <span class="project-arrow">↗</span>
+                    </a>
+                  </h3>
+                  <span class="project-type">LANDING PAGE</span>
+                </div>
+
+                <p class="project-desc">
+                  Página interativa inspirada em Grand Theft Auto V &amp; GTA Online, explorando composição visual de impacto, seleção de plataformas e interatividade com JavaScript.
+                </p>
+
+                <ul class="tag-row" aria-label="Tecnologias">
+                  <li class="tag-chip">HTML5</li>
+                  <li class="tag-chip">CSS3</li>
+                  <li class="tag-chip">JavaScript</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+
+          <div class="archive-cta reveal-up">
+            <a href="https://github.com/Jottape11?tab=repositories" target="_blank" rel="noopener noreferrer" class="slide-btn">
+              <span>Ver todos os 24+ repositórios no GitHub</span>
+              <span class="project-arrow">↗</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- 03 // TECH STACK & ARSENAL -->
+        <section id="stack" class="content-section" data-section-id="stack">
+          <div class="section-header">
+            <span class="section-index" data-scramble="03 // TECH STACK & ARSENAL">03 // TECH STACK &amp; ARSENAL</span>
+            <span class="section-meta">FERRAMENTAS</span>
+          </div>
+          <div class="hairline-draw"></div>
+
+          <div class="stack-table">
+            <div class="stack-row reveal-up">
+              <span class="stack-cat">Front-End</span>
+              <div class="tag-row">
+                <span class="tag-chip">React</span>
+                <span class="tag-chip">JavaScript (ES6+)</span>
+                <span class="tag-chip">TypeScript</span>
+                <span class="tag-chip">HTML5 &amp; CSS3</span>
+                <span class="tag-chip">Tailwind CSS</span>
+                <span class="tag-chip">Bootstrap</span>
+              </div>
+            </div>
+
+            <div class="stack-row reveal-up">
+              <span class="stack-cat">Back-End &amp; Dados</span>
+              <div class="tag-row">
+                <span class="tag-chip">Python</span>
+                <span class="tag-chip">FastAPI</span>
+                <span class="tag-chip">REST APIs</span>
+                <span class="tag-chip">Pydantic</span>
+                <span class="tag-chip">SQLite</span>
+                <span class="tag-chip">Streamlit</span>
+              </div>
+            </div>
+
+            <div class="stack-row reveal-up">
+              <span class="stack-cat">IA &amp; Vibe Coding</span>
+              <div class="tag-row">
+                <span class="tag-chip">Google Gemini</span>
+                <span class="tag-chip">Anthropic Claude</span>
+                <span class="tag-chip">OpenAI Codex</span>
+                <span class="tag-chip">Prompt Engineering</span>
+              </div>
+            </div>
+
+            <div class="stack-row reveal-up">
+              <span class="stack-cat">Workflow</span>
+              <div class="tag-row">
+                <span class="tag-chip">Git &amp; GitHub</span>
+                <span class="tag-chip">VS Code</span>
+                <span class="tag-chip">Postman</span>
+                <span class="tag-chip">Vercel</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 // CONTATO -->
+        <section id="contato" class="content-section contact-section" data-section-id="contato">
+          <div class="section-header">
+            <span class="section-index" data-scramble="04 // CONTACT">04 // CONTACT</span>
+            <span class="section-meta">NETWORKING</span>
+          </div>
+          <div class="hairline-draw"></div>
+
+          <div class="contact-box reveal-up">
+            <h2 class="contact-heading">
+              Bora trocar uma ideia sobre tecnologia, código ou IA?
+            </h2>
+            <p class="contact-text">
+              Estou sempre aberto para fazer networking, compartilhar aprendizados da faculdade e conversar sobre projetos de desenvolvimento e Inteligência Artificial.
+            </p>
+
+            <div class="contact-actions">
+              <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-s%C3%A1/" target="_blank" rel="noopener noreferrer" class="slide-btn slide-btn-primary">
+                <span>Conectar no LinkedIn</span>
+                <span>↗</span>
+              </a>
+
+              <button type="button" id="copyEmailBtn" data-email="jpmaschionsa@gmail.com" class="slide-btn">
+                <span id="copyEmailText">Copiar: jpmaschionsa@gmail.com</span>
+                <span>⧉</span>
+              </button>
+
+              <a href="https://github.com/Jottape11" target="_blank" rel="noopener noreferrer" class="slide-btn">
+                <span>GitHub (@Jottape11)</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <footer class="right-footer">
+          <p>
+            João Pedro Sá • Engenharia de Software @ FIAP
+          </p>
+        </footer>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- GSAP 3 + ScrollTrigger + Lenis Smooth Scroll via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
